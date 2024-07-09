@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Muli Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Regular'), url('./assets/fonts/Muli-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Muli Bold'), url('./assets/fonts/Muli-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'WorkSans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('WorkSans Regular'), url('./assets/fonts/WorkSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'WorkSans Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('WorkSans Bold'), url('./assets/fonts/WorkSans-Bold.woff') format('woff');
+}
+
+body {
+  font-family: 'Muli Regular', Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.header__upper {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.button {
+  padding: 12px;
+  background: #FC7E01;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+h2  {
+  color: #EA4505;
+  font-family: WorkSans Regular, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h3 {
+  color: #EA4505;
+  font-family: 'Muli Bold', Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.small {
+  filter: blur(3px);
+}
+
+h4 {
+  color: #EA4505;
+  font-size: 20px;
+  font-family: 'Muli Regular', Helvetica, sans-serif;
+}
+
+p {
+  color: #607D8B;
+  line-height: 2;
+}
+
+
+a {
+  font-family: 'Muli Bold', Helvetica, sans-serif;
+  color: #008089;
+}
+
+.responsive {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1--hero {
+  color: white;
+  font-family: 'WorkSans Bold', Helvetica, sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .h1--hero {
+    font-size: 40px;
+  }
+}
